@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف شواهد الأداء الوظيفي للمعلم</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo-section">
+                    <img src="https://salogos.org/wp-content/uploads/2021/11/UntiTtled-1-1300x988.png" alt="شعار وزارة التعليم" class="ministry-logo">
+                </div>
+                <div class="title-section">
+                    <h1 class="main-title">ملف شواهد الأداء الوظيفي للمعلم</h1>
+                    <span class="teacher-name" id="teacherNameDisplay"></span>
+                </div>
+            </div>
+            <div class="header-info">
+                <div class="info-item">
+                    <span class="info-label">الإدارة التعليمية:</span>
+                    <span class="info-value" id="educationOfficeDisplay">غير محدد</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">المدرسة:</span>
+                    <span class="info-value" id="schoolDisplay">غير محدد</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">العام الدراسي:</span>
+                    <span class="info-value" id="academicYearDisplay">غير محدد</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-gradient"></div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <button class="nav-tab active" data-tab="home">الصفحة الرئيسية</button>
+            <button class="nav-tab" data-tab="introduction">مقدمة الملف</button>
+            <button class="nav-tab" data-tab="leaders">كلمات القادة</button>
+            <button class="nav-tab" data-tab="cv">السيرة الذاتية</button>
+            <button class="nav-tab" data-tab="performance">شواهد الأداء</button>
+            <button class="nav-tab" data-tab="documentation">التوثيق والمتابعة</button>
+            <button class="nav-tab" data-tab="improvement">خطة التحسين</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section class="tab-content active" id="home">
+            <div class="container">
+                <h2>البيانات الأساسية</h2>
+                <form class="basic-info-form">
+                    <div class="form-group">
+                        <label for="teacherName">اسم المعلم:</label>
+                        <input type="text" id="teacherName" name="teacherName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="educationOffice">الإدارة التعليمية:</label>
+                        <input type="text" id="educationOffice" name="educationOffice" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="school">المدرسة:</label>
+                        <input type="text" id="school" name="school" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="academicYear">العام الدراسي:</label>
+                        <input type="text" id="academicYear" name="academicYear" placeholder="مثال: 1446-1447هـ" required>
+                    </div>
+                    <button type="submit" class="save-btn">حفظ البيانات</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Introduction Page -->
+        <section class="tab-content" id="introduction">
+            <div class="container">
+                <h2>مقدمة ملف شواهد الأداء الوظيفي للمعلم</h2>
+                <div class="introduction-content">
+                    <p>إن التعليم هو الأساس الذي تُبنى عليه الأوطان، والركيزة التي تقوم عليها النهضة الحضارية والتنموية في أي مجتمع. وقد أولت المملكة العربية السعودية، في ظل قيادتها الرشيدة، التعليم أهمية كبرى بوصفه محركًا أساسيًا لرؤية المملكة 2030 وأداة فاعلة لبناء الإنسان وتمكينه من مهارات القرن الحادي والعشرين.</p>
+                    
+                    <p>ومن هذا المنطلق، جاء إعداد هذا الملف الخاص بـ شواهد الأداء الوظيفي للمعلم، ليُبرز ما تم إنجازه من ممارسات تربوية وتعليمية تسهم في تحسين نواتج التعلم، وتوثيق العمل المهني المستند إلى معايير الجودة والتميز، وقياس مستوى تحقق المهارات والمعارف بما يدعم المسيرة التعليمية.</p>
+                    
+                    <p>وإيمانًا بأن المعلم هو حجر الزاوية في تطوير التعليم، فإن هذا الملف يُعد انعكاسًا حقيقيًا لدوره الريادي في بناء الأجيال وصناعة المستقبل، مستلهمين في ذلك كلمات ولاة أمرنا التي تُعد نبراسًا نهتدي به.</p>
+                    
+                    <div class="vision-mission">
+                        <div class="vision">
+                            <h3>الرؤية</h3>
+                            <p>تحقيق تعليم نوعي عالي الجودة، يُسهم في بناء جيل واعٍ ومتمكن، منافس عالميًا، ومؤمن بقيمه الوطنية.</p>
+                        </div>
+                        
+                        <div class="mission">
+                            <h3>الرسالة</h3>
+                            <p>تقديم تعليم محفّز على الإبداع والتميّز، قائم على معايير مهنية، يعزز من دور المعلم في قيادة التعلم، ويركز على تمكين المتعلم من المهارات والمعارف اللازمة لمواكبة التغيرات العالمية.</p>
+                        </div>
+                        
+                        <div class="values">
+                            <h3>القيم</h3>
+                            <ul>
+                                <li><strong>المواطنة:</strong> تعزيز الانتماء الوطني والاعتزاز بالهوية السعودية.</li>
+                                <li><strong>الجودة:</strong> الالتزام بمعايير الأداء والتميّز المؤسسي.</li>
+                                <li><strong>المسؤولية:</strong> أداء الواجبات المهنية بأمانة ومصداقية.</li>
+                                <li><strong>الابتكار:</strong> دعم الإبداع وتوظيف الحلول التقنية الحديثة.</li>
+                                <li><strong>التمكين:</strong> بناء القدرات وتطوير الكفاءات التعليمية.</li>
+                                <li><strong>العدالة:</strong> تحقيق المساواة وتكافؤ الفرص التعليمية.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaders Page -->
+        <section class="tab-content" id="leaders">
+            <div class="container">
+                <h2>كلمات القادة</h2>
+                <div class="leaders-content">
+                    <!-- King Salman -->
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="https://i.top4top.io/p_3485a0uv82.jpeg" alt="خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز">
+                        </div>
+                        <div class="leader-quote">
+                            <h3>كلمة خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود – حفظه الله:</h3>
+                            <blockquote>
+                                "إن التعليم في السعودية هو الركيزة الأساسية للتنمية، ونحن نولي أبناءنا الطلاب والطالبات جلّ اهتمامنا، ونوفر لهم أفضل سبل التعليم الحديث، فهم عماد المستقبل وأمله."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Crown Prince -->
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="https://h.top4top.io/p_3485vnxie0.jpeg" alt="صاحب السمو الملكي الأمير محمد بن سلمان">
+                        </div>
+                        <div class="leader-quote">
+                            <h3>كلمة صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز – ولي العهد رئيس مجلس الوزراء – حفظه الله:</h3>
+                            <blockquote>
+                                "طموحنا أن نبني وطنًا أكثر ازدهارًا، يجد فيه كل مواطن ما يتمناه، ويشارك في بناء مستقبله. ولن يكون ذلك إلا بتعليم رائد يصنع جيلاً واعيًا ومؤهلاً للمنافسة عالميًا."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Minister of Education -->
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="https://h.top4top.io/p_34853oi4r1.jpeg" alt="معالي وزير التعليم يوسف البنيان">
+                        </div>
+                        <div class="leader-quote">
+                            <h3>كلمة معالي وزير التعليم يوسف البنيان:</h3>
+                            <blockquote>
+                                "نسعى في وزارة التعليم إلى تطوير المنظومة التعليمية بما يتماشى مع مستهدفات رؤية 2030، من خلال تمكين المعلم، وتحسين نواتج التعلم، وتوفير بيئة تعليمية محفزة للتميّز والإبداع."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Page -->
+        <section class="tab-content" id="cv">
+            <div class="container">
+                <h2>السيرة الذاتية</h2>
+                <div class="cv-content">
+                    <!-- Basic Information -->
+                    <div class="cv-section">
+                        <h3>البيانات الأساسية</h3>
+                        <form class="cv-form" id="basicInfoForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">الاسم الكامل:</label>
+                                    <input type="text" id="fullName" name="fullName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nationalId">رقم الهوية:</label>
+                                    <input type="text" id="nationalId" name="nationalId">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="birthDate">تاريخ الميلاد:</label>
+                                    <input type="date" id="birthDate" name="birthDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="qualification">المؤهل العلمي:</label>
+                                    <input type="text" id="qualification" name="qualification">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="specialization">التخصص:</label>
+                                    <input type="text" id="specialization" name="specialization">
+                                </div>
+                                <div class="form-group">
+                                    <label for="experience">سنوات الخبرة:</label>
+                                    <input type="number" id="experience" name="experience" min="0">
+                                </div>
+                            </div>
+                            <button type="submit" class="save-btn">حفظ البيانات الأساسية</button>
+                        </form>
+                    </div>
+
+                    <!-- Professional License -->
+                    <div class="cv-section">
+                        <h3>الرخصة المهنية</h3>
+                        <div class="file-upload-section">
+                            <div class="upload-area" id="licenseUpload">
+                                <div class="upload-icon">📄</div>
+                                <p>اضغط هنا لرفع صورة الرخصة المهنية</p>
+                                <input type="file" id="licenseFile" accept="image/*,application/pdf" hidden>
+                            </div>
+                            <div class="file-preview" id="licensePreview"></div>
+                        </div>
+                    </div>
+
+                    <!-- Certificates -->
+                    <div class="cv-section">
+                        <h3>شهادات الشكر والتقدير (حد أقصى 8 شهادات)</h3>
+                        <div class="file-upload-section">
+                            <div class="upload-area" id="certificatesUpload">
+                                <div class="upload-icon">🏆</div>
+                                <p>اضغط هنا لرفع شهادات الشكر والتقدير</p>
+                                <input type="file" id="certificatesFile" accept="image/*,application/pdf" multiple hidden>
+                            </div>
+                            <div class="file-preview" id="certificatesPreview"></div>
+                        </div>
+                    </div>
+
+                    <!-- Training Courses -->
+                    <div class="cv-section">
+                        <h3>الدورات التدريبية</h3>
+                        <div class="courses-container" id="coursesContainer">
+                            <div class="course-item">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>اسم الدورة:</label>
+                                        <input type="text" name="courseName" placeholder="اسم الدورة التدريبية">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>الجهة المنظمة:</label>
+                                        <input type="text" name="courseOrganizer" placeholder="الجهة المنظمة">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>تاريخ الدورة:</label>
+                                        <input type="date" name="courseDate">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>عدد الساعات:</label>
+                                        <input type="number" name="courseHours" min="1" placeholder="عدد الساعات">
+                                    </div>
+                                </div>
+                                <button type="button" class="remove-course-btn" onclick="removeCourse(this)">حذف الدورة</button>
+                            </div>
+                        </div>
+                        <button type="button" class="add-course-btn" onclick="addCourse()">إضافة دورة جديدة</button>
+                        <button type="button" class="save-btn" onclick="saveCourses()">حفظ الدورات التدريبية</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Page -->
+        <section class="tab-content" id="performance">
+            <div class="container">
+                <h2>شواهد الأداء الوظيفي</h2>
+                <div class="performance-content">
+                    <!-- Performance Item 1 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #fff5f5;">
+                        <div class="performance-header">
+                            <h3>1. أداء الواجبات الوظيفية (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(1)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(1)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">التزام المعلم بأداء واجباته الوظيفية وفقاً للوائح والأنظمة المعمول بها.</p>
+                        
+                        <div class="note-section" id="note-1" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(1, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-1" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(1, this.files)">
+                            <div class="file-preview" id="preview-1"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-1" value="1" onchange="updateRating(1, 1)">
+                                <input type="radio" name="rating-1" value="2" onchange="updateRating(1, 2)">
+                                <input type="radio" name="rating-1" value="3" onchange="updateRating(1, 3)">
+                                <input type="radio" name="rating-1" value="4" onchange="updateRating(1, 4)">
+                                <input type="radio" name="rating-1" value="5" onchange="updateRating(1, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 2 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #f0fff4;">
+                        <div class="performance-header">
+                            <h3>2. التفاعل مع المجتمع المهني (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(2)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(2)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">مشاركة المعلم في الأنشطة المهنية والتطوير المستمر.</p>
+                        
+                        <div class="note-section" id="note-2" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(2, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-2" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(2, this.files)">
+                            <div class="file-preview" id="preview-2"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-2" value="1" onchange="updateRating(2, 1)">
+                                <input type="radio" name="rating-2" value="2" onchange="updateRating(2, 2)">
+                                <input type="radio" name="rating-2" value="3" onchange="updateRating(2, 3)">
+                                <input type="radio" name="rating-2" value="4" onchange="updateRating(2, 4)">
+                                <input type="radio" name="rating-2" value="5" onchange="updateRating(2, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 3 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #f0f8ff;">
+                        <div class="performance-header">
+                            <h3>3. التفاعل مع أولياء الأمور (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(3)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(3)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">التواصل الفعال مع أولياء الأمور ومشاركتهم في العملية التعليمية.</p>
+                        
+                        <div class="note-section" id="note-3" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(3, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-3" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(3, this.files)">
+                            <div class="file-preview" id="preview-3"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-3" value="1" onchange="updateRating(3, 1)">
+                                <input type="radio" name="rating-3" value="2" onchange="updateRating(3, 2)">
+                                <input type="radio" name="rating-3" value="3" onchange="updateRating(3, 3)">
+                                <input type="radio" name="rating-3" value="4" onchange="updateRating(3, 4)">
+                                <input type="radio" name="rating-3" value="5" onchange="updateRating(3, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 4 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #fffaf0;">
+                        <div class="performance-header">
+                            <h3>4. تنويع استراتيجيات التدريس (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(4)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(4)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">استخدام استراتيجيات تدريس متنوعة تناسب احتياجات الطلاب المختلفة.</p>
+                        
+                        <div class="note-section" id="note-4" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(4, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-4" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(4, this.files)">
+                            <div class="file-preview" id="preview-4"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-4" value="1" onchange="updateRating(4, 1)">
+                                <input type="radio" name="rating-4" value="2" onchange="updateRating(4, 2)">
+                                <input type="radio" name="rating-4" value="3" onchange="updateRating(4, 3)">
+                                <input type="radio" name="rating-4" value="4" onchange="updateRating(4, 4)">
+                                <input type="radio" name="rating-4" value="5" onchange="updateRating(4, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 5 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #f5f0ff;">
+                        <div class="performance-header">
+                            <h3>5. تحسين نتائج المتعلمين (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(5)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(5)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">العمل على تحسين مستوى الطلاب وتحقيق نواتج التعلم المستهدفة.</p>
+                        
+                        <div class="note-section" id="note-5" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(5, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-5" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(5, this.files)">
+                            <div class="file-preview" id="preview-5"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-5" value="1" onchange="updateRating(5, 1)">
+                                <input type="radio" name="rating-5" value="2" onchange="updateRating(5, 2)">
+                                <input type="radio" name="rating-5" value="3" onchange="updateRating(5, 3)">
+                                <input type="radio" name="rating-5" value="4" onchange="updateRating(5, 4)">
+                                <input type="radio" name="rating-5" value="5" onchange="updateRating(5, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 6 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #fff0f5;">
+                        <div class="performance-header">
+                            <h3>6. إعداد وتنفيذ خطة التعلم (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(6)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(6)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">إعداد خطط تعليمية فعالة وتنفيذها بما يحقق الأهداف التعليمية.</p>
+                        
+                        <div class="note-section" id="note-6" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(6, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-6" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(6, this.files)">
+                            <div class="file-preview" id="preview-6"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-6" value="1" onchange="updateRating(6, 1)">
+                                <input type="radio" name="rating-6" value="2" onchange="updateRating(6, 2)">
+                                <input type="radio" name="rating-6" value="3" onchange="updateRating(6, 3)">
+                                <input type="radio" name="rating-6" value="4" onchange="updateRating(6, 4)">
+                                <input type="radio" name="rating-6" value="5" onchange="updateRating(6, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 7 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #f0ffff;">
+                        <div class="performance-header">
+                            <h3>7. توظيف التقنيات والوسائل (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(7)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(7)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">استخدام التقنيات الحديثة والوسائل التعليمية المتنوعة في التدريس.</p>
+                        
+                        <div class="note-section" id="note-7" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(7, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-7" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(7, this.files)">
+                            <div class="file-preview" id="preview-7"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-7" value="1" onchange="updateRating(7, 1)">
+                                <input type="radio" name="rating-7" value="2" onchange="updateRating(7, 2)">
+                                <input type="radio" name="rating-7" value="3" onchange="updateRating(7, 3)">
+                                <input type="radio" name="rating-7" value="4" onchange="updateRating(7, 4)">
+                                <input type="radio" name="rating-7" value="5" onchange="updateRating(7, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 8 -->
+                    <div class="performance-item" data-weight="5" style="background-color: #fafff0;">
+                        <div class="performance-header">
+                            <h3>8. تهيئة البيئة التعليمية (5%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(8)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(8)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">إعداد بيئة تعليمية محفزة ومناسبة للتعلم الفعال.</p>
+                        
+                        <div class="note-section" id="note-8" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(8, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-8" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(8, this.files)">
+                            <div class="file-preview" id="preview-8"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-8" value="1" onchange="updateRating(8, 1)">
+                                <input type="radio" name="rating-8" value="2" onchange="updateRating(8, 2)">
+                                <input type="radio" name="rating-8" value="3" onchange="updateRating(8, 3)">
+                                <input type="radio" name="rating-8" value="4" onchange="updateRating(8, 4)">
+                                <input type="radio" name="rating-8" value="5" onchange="updateRating(8, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 9 -->
+                    <div class="performance-item" data-weight="5" style="background-color: #fff5fa;">
+                        <div class="performance-header">
+                            <h3>9. الإدارة الصفية (5%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(9)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(9)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">إدارة الصف بفعالية وضبط سلوك الطلاب بطرق إيجابية.</p>
+                        
+                        <div class="note-section" id="note-9" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(9, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-9" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(9, this.files)">
+                            <div class="file-preview" id="preview-9"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-9" value="1" onchange="updateRating(9, 1)">
+                                <input type="radio" name="rating-9" value="2" onchange="updateRating(9, 2)">
+                                <input type="radio" name="rating-9" value="3" onchange="updateRating(9, 3)">
+                                <input type="radio" name="rating-9" value="4" onchange="updateRating(9, 4)">
+                                <input type="radio" name="rating-9" value="5" onchange="updateRating(9, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 10 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #f5fff5;">
+                        <div class="performance-header">
+                            <h3>10. تحليل نتائج المتعلمين (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(10)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(10)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">تحليل نتائج الطلاب واستخدامها في تطوير العملية التعليمية.</p>
+                        
+                        <div class="note-section" id="note-10" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(10, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-10" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(10, this.files)">
+                            <div class="file-preview" id="preview-10"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-10" value="1" onchange="updateRating(10, 1)">
+                                <input type="radio" name="rating-10" value="2" onchange="updateRating(10, 2)">
+                                <input type="radio" name="rating-10" value="3" onchange="updateRating(10, 3)">
+                                <input type="radio" name="rating-10" value="4" onchange="updateRating(10, 4)">
+                                <input type="radio" name="rating-10" value="5" onchange="updateRating(10, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Item 11 -->
+                    <div class="performance-item" data-weight="10" style="background-color: #fffff0;">
+                        <div class="performance-header">
+                            <h3>11. تنوع أساليب التقويم (10%)</h3>
+                            <div class="performance-actions">
+                                <button class="note-btn" onclick="toggleNote(11)">📝</button>
+                                <button class="upload-btn" onclick="openFileUpload(11)">📎</button>
+                            </div>
+                        </div>
+                        <p class="performance-description">استخدام أساليب تقويم متنوعة تناسب أهداف التعلم المختلفة.</p>
+                        
+                        <div class="note-section" id="note-11" style="display: none;">
+                            <textarea placeholder="اكتب ملاحظاتك هنا..." onchange="saveNote(11, this.value)"></textarea>
+                        </div>
+                        
+                        <div class="file-upload-section">
+                            <input type="file" id="files-11" multiple accept="image/*,application/pdf" style="display: none;" onchange="handleFileUpload(11, this.files)">
+                            <div class="file-preview" id="preview-11"></div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <label>التقييم الذاتي:</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating-11" value="1" onchange="updateRating(11, 1)">
+                                <input type="radio" name="rating-11" value="2" onchange="updateRating(11, 2)">
+                                <input type="radio" name="rating-11" value="3" onchange="updateRating(11, 3)">
+                                <input type="radio" name="rating-11" value="4" onchange="updateRating(11, 4)">
+                                <input type="radio" name="rating-11" value="5" onchange="updateRating(11, 5)">
+                                <span class="rating-labels">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Overall Rating -->
+                    <div class="overall-rating">
+                        <h3>نتيجة التقييم الذاتي الإجمالية</h3>
+                        <div class="rating-result">
+                            <span class="rating-score" id="overallScore">0.00</span>
+                            <span class="rating-max">/ 5.00</span>
+                        </div>
+                        <div class="rating-percentage" id="overallPercentage">0%</div>
+                        <button class="save-btn" onclick="saveAllPerformanceData()">حفظ جميع البيانات</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Page -->
+        <section class="tab-content" id="documentation">
+            <div class="container">
+                <h2>التوثيق والمتابعة</h2>
+                <div class="documentation-content">
+                    <div class="documentation-section">
+                        <h3>سجل المتابعة والتوصيات</h3>
+                        <div class="follow-ups-container" id="followUpsContainer">
+                            <div class="follow-up-item">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>المتابعة:</label>
+                                        <textarea name="followUpText" placeholder="اكتب تفاصيل المتابعة هنا..." rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>التوصيات:</label>
+                                        <textarea name="recommendations" placeholder="اكتب التوصيات هنا..." rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>اسم المتابع:</label>
+                                        <input type="text" name="followerName" placeholder="اسم المتابع">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>تاريخ المتابعة:</label>
+                                        <input type="date" name="followUpDate">
+                                    </div>
+                                </div>
+                                <button type="button" class="remove-followup-btn" onclick="removeFollowUp(this)">حذف المتابعة</button>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <button type="button" class="add-followup-btn" onclick="addFollowUp()">إضافة متابعة جديدة</button>
+                            <button type="button" class="save-btn" onclick="saveFollowUps()">حفظ جميع المتابعات</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Improvement Plan Page -->
+        <section class="tab-content" id="improvement">
+            <div class="container">
+                <h2>خطة التحسين المقترحة</h2>
+                <div class="improvement-content">
+                    <div class="improvement-intro">
+                        <p>بناءً على التقييم الذاتي وملاحظات المتابعة، يمكن وضع خطة تحسين للجوانب التي تحتاج إلى تطوير في الأداء الوظيفي.</p>
+                    </div>
+                    
+                    <div class="improvement-section">
+                        <h3>خطط التحسين</h3>
+                        <div class="improvement-plans-container" id="improvementPlansContainer">
+                            <div class="improvement-plan-item">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>مجال التحسين:</label>
+                                        <select name="improvementArea">
+                                            <option value="">اختر مجال التحسين</option>
+                                            <option value="1">أداء الواجبات الوظيفية</option>
+                                            <option value="2">التفاعل مع المجتمع المهني</option>
+                                            <option value="3">التفاعل مع أولياء الأمور</option>
+                                            <option value="4">تنويع استراتيجيات التدريس</option>
+                                            <option value="5">تحسين نتائج المتعلمين</option>
+                                            <option value="6">إعداد وتنفيذ خطة التعلم</option>
+                                            <option value="7">توظيف التقنيات والوسائل</option>
+                                            <option value="8">تهيئة البيئة التعليمية</option>
+                                            <option value="9">الإدارة الصفية</option>
+                                            <option value="10">تحليل نتائج المتعلمين</option>
+                                            <option value="11">تنوع أساليب التقويم</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>أولوية التحسين:</label>
+                                        <select name="priority">
+                                            <option value="">اختر الأولوية</option>
+                                            <option value="عالية">عالية</option>
+                                            <option value="متوسطة">متوسطة</option>
+                                            <option value="منخفضة">منخفضة</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>هدف التحسين:</label>
+                                        <textarea name="improvementGoal" placeholder="اكتب هدف التحسين المراد تحقيقه..." rows="3"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>الإجراءات المقترحة:</label>
+                                        <textarea name="proposedActions" placeholder="اكتب الإجراءات والخطوات المقترحة للتحسين..." rows="4"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>تاريخ البداية:</label>
+                                        <input type="date" name="startDate">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>تاريخ النهاية:</label>
+                                        <input type="date" name="endDate">
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="remove-plan-btn" onclick="removeImprovementPlan(this)">حذف خطة التحسين</button>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button type="button" class="add-plan-btn" onclick="addImprovementPlan()">إضافة خطة تحسين جديدة</button>
+                            <button type="button" class="save-btn" onclick="saveImprovementPlans()">حفظ جميع خطط التحسين</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Summary Section -->
+                    <div class="improvement-summary" id="improvementSummary">
+                        <h3>ملخص خطط التحسين</h3>
+                        <div class="summary-content">
+                            <div class="summary-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number" id="totalPlans">0</span>
+                                    <span class="stat-label">إجمالي الخطط</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" id="highPriorityPlans">0</span>
+                                    <span class="stat-label">عالية الأولوية</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" id="activePlans">0</span>
+                                    <span class="stat-label">خطط نشطة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span>جميع الحقوق محفوظة لقناة رسم للتصميم والخدمات التعليمية</span>
+            <img src="https://h.top4top.io/p_3453yqc3h0.png" alt="شعار رسم" class="rasm-logo">
+            <a href="https://t.me/Rasm_MA1" target="_blank" class="footer-link">https://t.me/Rasm_MA1</a>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+    
+    <!-- Database Configuration -->
+    <script src="firebase-config.js"></script>
+    <script src="js/database.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
